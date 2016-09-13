@@ -11,4 +11,5 @@ for row in csv_file_object:
 
 data = np.array(data)
 
-print data[0::, 4]
+women_only_stats = data[0::,4] == "female"
+print women_only_stats
